@@ -1,0 +1,184 @@
+{
+    "menu": [
+        {
+            "name": "Jewelry",
+            "href": "#jewelry",
+            "children": [
+                {
+                "title": "Shop by category",
+                "menu": 
+                    [
+                        {
+                            "name": "Necklaces & Pendants",
+                            "href": "#necklaces&pendants"
+                        },
+                        {
+                            "name": "Earrings",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Bracelets",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Rings",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Fine Watches",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Brooches",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Charms",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Men's Jewelry",
+                            "href": "#"
+                        },
+                        {
+                            "name": "Explore All Categories",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Curated Shops",
+                    "menu": 
+                        [
+                            {
+                                "name": "Gifts for Her",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Most Popular Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "New Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Online Exclusives",
+                                "href": "#"
+                            },
+                            {
+                                "name": "High Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Bold Silver Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Dianty Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Hoop Earrings",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Stacking Rings",
+                                "href": "#"
+                            }
+                        ]
+                },
+                {
+                    "title": "Shop by Metal",
+                    "menu": 
+                        [
+                            {
+                                "name": "Gold Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Rose Gold Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Platinum Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Sterling Silver Jewelry",
+                                "href": "#"
+                            }
+                        ]
+                },
+                {
+                    "title": "Shop by Gemstone",
+                    "menu": 
+                        [
+                            {
+                                "name": "Diamond Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Pearl Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Aquamarine Jewelry",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Colored Gemstone Jewelry",
+                                "href": "#"
+                            }
+                        ]
+                },
+                {
+                    "title": "Featured Collections",
+                    "menu": 
+                        [
+                            {
+                                "name": "Tiffany Lock",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Tiffany T",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Tiffany HardWear",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Tiffany Knot",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Tiffany Victoria",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Return to Tiffany",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Elsa Peretti",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Tifanny & Co. Schlumberger",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Paloma Picasso",
+                                "href": "#"
+                            },
+                            {
+                                "name": "Explore All Collections",
+                                "href": "#"
+                            }
+                        ]
+                }
+            ]
+        }
+    ]
+}

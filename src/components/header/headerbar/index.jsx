@@ -1,43 +1,68 @@
-import style from '../../../styles/Header.module.scss'
-import Tiffany from '../../../assets/images/tiffco-logo-2.svg'
-import Menu from '../../../assets/images/menu.svg'
-import Search from '../../../assets/images/search-1.svg'
-import Location from '../../../assets/images/location.svg'
-import Contact from '../../../assets/images/concierge.svg'
-import Calendar from '../../../assets/images/calendar.svg'
-import Account from '../../../assets/images/account.svg'
+import style from "../../../styles/Header.module.scss";
+import Tiffany from "../../../assets/images/tiffco-logo-2.svg";
 
 const HeaderBar = () => {
   return (
     <div className={style.headerBar}>
-      <a href="#">
-        <div className={style["headerBar__menu-icon"]}>
-          <img src={Menu} alt="Open menu" />
-        </div>
+      <button
+        href="#"
+        title="Mobile menu"
+        className={`${style.headerBar__menu}`}
+      >
+        Open Menu
+      </button>
+      <a
+        href="#search"
+        title="Open search"
+        className={`${style.headerBar__item} ${style["headerBar__item--search"]}`}
+      >
+        Search
       </a>
-      <a href="#search">
-        <div className={style["headerBar__menu-icon"]}>
-          <img src={Search} alt="Open Search" />
-        </div>
+      <a
+        href="#location"
+        title="Store Locations"
+        className={`${style.headerBar__item}  ${style["headerBar__item--location"]}`}
+      >
+        Store Locations
       </a>
-      <a href="#location">
-        <img src={Location} alt="Store Locations" />
-      </a>
-      <a href="#contact">
-        <img src={Contact} alt="Store Locations" />
+      <a
+        href="#contact"
+        title="Contact"
+        className={`${style.headerBar__item} ${style["headerBar__item--contact"]}`}
+      >
         Contact us
       </a>
       <img src={Tiffany} className="logo logo--header" alt="Tiffany & Co." />
-
-      <a href="#appointment">
-        <img src={Calendar} alt="Store Locations" />
+      <a
+        href="#appointment"
+        title="Book an Appointment"
+        className={`${style.headerBar__item} ${style["headerBar__item--appointment"]}`}
+      >
         Book an Appointment
       </a>
-      <a href="#account">
-        <img src={Account} alt="Store Locations" />
+      <a
+        href="#account"
+        title="My Account"
+        className={`${style.headerBar__item} ${style["headerBar__item--account"]}`}
+      >
+        Account
+      </a>
+      <a
+        href="#wishlist"
+        title="My Wishlist"
+        className={`${style.headerBar__item} ${style["headerBar__item--wishlist"]}`}
+      >
+        My Wishlist
+      </a>
+      <a
+        href="#shoppingbag"
+        title="My Shopping Bag"
+        className={`${style.headerBar__item} ${style["headerBar__item--shoppingbag"]}`}
+      >
+        Your Shopping Bag
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderBar
+export default HeaderBar;

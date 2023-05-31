@@ -1,55 +1,187 @@
 .header {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .topBar {
-	background: #81d8d0;
-	height: 44px;
-	box-sizing: border-box;
-	padding: 0 !important;
-	&__text {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		p {
-			text-align: center;
-			font-weight: 600;
-			font-size: 0.875rem;
-		}
-		a {
-			color: #000;
-			border-bottom: 1px solid #000;
-			line-height: 1.71;
-			display: inline-block;
-		}
-	}
+  background: #81d8d0;
+  height: 2.75rem;
+  box-sizing: border-box;
+  padding: 0 !important;
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    a {
+      color: #000;
+      border-bottom: 1px solid #000;
+      line-height: 1.71;
+      display: inline-block;
+    }
+  }
 
-	:global(.splide__arrow) {
-		height: 1rem;
-		width: 1rem;
-		svg {
-			display: none;
-		}
-		background-image: url("../assets/images/left-1.svg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
-	:global(.splide__arrow--next) {
-		transform: rotate(180deg);
-		top: 0;
-		bottom: 0;
-		margin: auto 0;
-	}
+  :global(.splide__arrow) {
+    height: 1rem;
+    width: 1rem;
+    svg {
+      display: none;
+    }
+    background-image: url("../assets/images/left-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  :global(.splide__arrow--next) {
+    transform: rotate(180deg);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
 
-	:global(.splide__track) {
-		height: 100%;
-	}
+  :global(.splide__track) {
+    height: 100%;
+  }
 }
 .headerBar {
-	border-top: 4px solid #81d8d0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 1.5rem;
+  border-top: 0.25rem solid #81d8d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  column-gap: 1rem;
+
+  &__menu {
+    display: none;
+    @media screen and (max-width: 1023px) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: max-content;
+      font-size: 0;
+      padding: 0 0.5rem;
+      border: none;
+      background-color: transparent;
+
+      &::before {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("../assets/images/menu.svg");
+      }
+
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/hamburger-1.gif");
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: max-content;
+    font-size: 0;
+    padding: 0 0.5rem;
+    color: #000;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    &--search {
+      &::before {
+        background-image: url("../assets/images/search-1.svg");
+      }
+
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/search-icon.gif");
+        }
+      }
+    }
+    &--location {
+      &::before {
+        background-image: url("../assets/images/location.svg");
+      }
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/store-locator.gif");
+        }
+      }
+    }
+
+    &--contact {
+      font-size: 0.875rem;
+      column-gap: 0.5rem;
+      &::before {
+        background-image: url("../assets/images/concierge.svg");
+      }
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/customer-service.gif");
+        }
+      }
+    }
+
+    &--appointment {
+      font-size: 0.875rem;
+      column-gap: 0.5rem;
+      &::before {
+        background-image: url("../assets/images/calendar.svg");
+      }
+
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/calendar.gif");
+        }
+      }
+    }
+
+    &--account {
+      &::before {
+        background-image: url("../assets/images/account.svg");
+      }
+
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/my-account.gif");
+        }
+      }
+    }
+
+    &--wishlist {
+      &::before {
+        background-image: url("../assets/images/wishlist.svg");
+      }
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/wishlisticon-empty.gif");
+        }
+      }
+    }
+
+    &--shoppingbag {
+      &::before {
+        background-image: url("../assets/images/shopping-bag.svg");
+      }
+      &:hover {
+        &::before {
+          background-image: url("../assets/images/shoppingbag-empty.gif");
+        }
+      }
+    }
+  }
 }
