@@ -7,7 +7,9 @@ import style from '../../../styles/Header.module.scss'
 const options = {
   type: 'loop',
   perPage: 1,
-  pagination: false
+  pagination: false,
+  autoplay: true,
+  interval: 3000
 }
 
 const TopBar = () => {
