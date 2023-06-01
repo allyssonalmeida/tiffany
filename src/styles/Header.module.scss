@@ -13,6 +13,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 2.75rem;
+		line-height: 2.75rem;
+
 		p {
 			text-align: center;
 			font-weight: 600;
@@ -34,29 +37,6 @@
 				padding: 0 30px;
 			}
 		}
-	}
-
-	:global(.splide__arrow) {
-		height: 1rem;
-		width: 1rem;
-		background: transparent;
-		svg {
-			display: none;
-		}
-		background-image: url("../assets/images/left-1.svg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
-	:global(.splide__arrow--next) {
-		transform: rotate(180deg);
-		top: 0;
-		bottom: 0;
-		margin: auto 0;
-	}
-
-	:global(.splide__track) {
-		height: 100%;
 	}
 }
 .headerBar {

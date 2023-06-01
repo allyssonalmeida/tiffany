@@ -13,6 +13,33 @@ body {
 	font-family: "Santral", sans-serif;
 }
 
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	height: 1rem;
+	width: 1rem;
+	z-index: 99;
+	&::before {
+		display: block;
+		content: "";
+		height: 1rem;
+		width: 1rem;
+		background-image: url("../assets/images/left-1.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+}
+
+.slick-next {
+	left: initial;
+	right: 10px;
+	&::before {
+		background-image: url("../assets/images/right-1.svg");
+	}
+}
+
 .logo {
 	display: block;
 	width: 100%;
