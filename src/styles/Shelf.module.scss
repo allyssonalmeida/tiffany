@@ -29,6 +29,7 @@
 
 .product {
 	padding: 0 5px;
+	position: relative;
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -40,6 +41,66 @@
 			width: 100%;
 			height: 100%;
 			aspect-ratio: 1 / 1;
+		}
+	}
+
+	&__summary {
+		padding: 10px 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+	}
+
+	&__cta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1.5rem;
+		border: 1px solid #000;
+		background-color: #000;
+
+		span {
+			color: #fff;
+			font-size: 0.875rem;
+			font-weight: 500;
+		}
+
+		&:hover {
+			background-color: #81d8d0;
+			span {
+				color: #000;
+			}
+		}
+
+		&:active {
+			border-color: #81d8d0;
+			outline: 1px solid #81d8d0;
+		}
+	}
+}
+
+.wishlist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	background-color: transparent;
+	&__icon {
+		height: 1rem;
+		width: 1rem;
+		background-image: url("../assets/images/wishlist.svg");
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&:hover {
+		& > .wishlist__icon {
+			background-image: url("../assets/images/wishlisticon-empty.gif");
 		}
 	}
 }

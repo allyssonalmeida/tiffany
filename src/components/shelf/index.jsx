@@ -27,14 +27,22 @@ const Shelf = () => {
         <Slider {...options}>
           {products.map((product, index) => (
             <div key={index} className={style.product}>
+              <button className={`${style.wishlist}`} title="Add to Wishlist">
+                <div className={style.wishlist__icon}></div>
+              </button>
               <a href="#product" key={index} className={style.product__image}>
                 <img src={product.images[0].url} alt={product.images[0].alt} />
               </a>
               <div className={style.product__summary}>
-                <strong className={style.product__name}></strong>
+                <strong className={style.product__name}>
+                  {product.name}
+                </strong>
                 <button className={style.product__cta}>
                   <span className={style.product__price}>
-                    {(product.price / 100).toLocaleString('en-US', { type: 'currency', currency: 'USD' })}
+                    {(product.price / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
+                  </span>
+                  <span className={style.product__addToCart}>
+                    Add to Bag
                   </span>
                 </button>
               </div>
