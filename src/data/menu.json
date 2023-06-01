@@ -1,0 +1,298 @@
+{
+	"header": {
+		"name": "header",
+		"children": [
+			{
+				"name": "Jewelry",
+				"href": "#jewelry",
+				"children": [
+					{
+						"name": "Shop by category",
+						"menu": [
+							{
+								"name": "Necklaces & Pendants",
+								"href": "#necklaces&pendants"
+							},
+							{
+								"name": "Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Bracelets",
+								"href": "#"
+							},
+							{
+								"name": "Rings",
+								"href": "#"
+							},
+							{
+								"name": "Fine Watches",
+								"href": "#"
+							},
+							{
+								"name": "Brooches",
+								"href": "#"
+							},
+							{
+								"name": "Charms",
+								"href": "#"
+							},
+							{
+								"name": "Men's Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Categories",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Curated Shops",
+						"menu": [
+							{
+								"name": "Gifts for Her",
+								"href": "#"
+							},
+							{
+								"name": "Most Popular Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "New Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Online Exclusives",
+								"href": "#"
+							},
+							{
+								"name": "High Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Bold Silver Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Dianty Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Hoop Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Stacking Rings",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Metal",
+						"menu": [
+							{
+								"name": "Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Rose Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Platinum Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Sterling Silver Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Gemstone",
+						"menu": [
+							{
+								"name": "Diamond Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Pearl Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Aquamarine Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Colored Gemstone Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Featured Collections",
+						"menu": [
+							{
+								"name": "Tiffany Lock",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany T",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany HardWear",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Knot",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Victoria",
+								"href": "#"
+							},
+							{
+								"name": "Return to Tiffany",
+								"href": "#"
+							},
+							{
+								"name": "Elsa Peretti",
+								"href": "#"
+							},
+							{
+								"name": "Tifanny & Co. Schlumberger",
+								"href": "#"
+							},
+							{
+								"name": "Paloma Picasso",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Collections",
+								"href": "#"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"footer": {
+		"name": "footer",
+		"children": [
+			{
+				"name": "Client Care",
+				"menu": [
+					{
+						"name": "Contact Us",
+						"href": "#contactus"
+					},
+					{
+						"name": "Track Your Order",
+						"href": "#ntrackyourorder"
+					},
+					{
+						"name": "Product Care & Repair",
+						"href": "#product-care"
+					},
+					{
+						"name": "Book an Appointment",
+						"href": "#book-appointment"
+					},
+					{
+						"name": "Frequently Asked Questions",
+						"href": "#faq"
+					},
+					{
+						"name": "Shipping & Returns",
+						"href": "#shipping"
+					},
+					{
+						"name": "Tiffany Select Financing",
+						"href": "#tiffany-financing"
+					},
+					{
+						"name": "Gift Cards",
+						"href": "#giftcards"
+					},
+					{
+						"name": "Website Accessibility",
+						"href": "#website-accessibility"
+					}
+				]
+			},
+			{
+				"name": "Our Company",
+				"menu": [
+					{
+						"name": "World of Tiffany",
+						"href": "#worldoftiffany"
+					},
+					{
+						"name": "Sustainability",
+						"href": "#sustainability"
+					},
+					{
+						"name": "California Supply Chains Act",
+						"href": "#california-supply"
+					},
+					{
+						"name": "California Privacy",
+						"href": "#california-privacy"
+					},
+					{
+						"name": "Tiffany Careers",
+						"href": "#carrers"
+					},
+					{
+						"name": "Website Policies",
+						"href": "#policies"
+					},
+					{
+						"name": "Transparency in Coverage",
+						"href": "#transparency"
+					},
+					{
+						"name": "Do Not Sell or Share My Personal Information",
+						"href": "#personal"
+					},
+					{
+						"name": "Opt-Out of Targeted Advertising",
+						"href": "#advertising"
+					}
+				]
+			},
+			{
+				"name": "Related Tiffany Sites",
+				"menu": [
+					{
+						"name": "Wedding & Gift Registry",
+						"href": "#wedding"
+					},
+					{
+						"name": "Business Accounts",
+						"href": "#sustainability"
+					},
+					{
+						"name": "Tiffany for the Press",
+						"href": "#california-supply"
+					},
+					{
+						"name": "The Tiffany & Co. Foundation",
+						"href": "#california-privacy"
+					},
+					{
+						"name": "Tiffany Alertline",
+						"href": "#carrers"
+					},
+					{
+						"name": "Site Index",
+						"href": "#policies"
+					}
+				]
+			}
+		]
+	}
+}

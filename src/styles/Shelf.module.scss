@@ -1,0 +1,20 @@
+.shelf {
+	width: 100%;
+	padding: 0 40px;
+}
+
+.product {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__image {
+		img {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+			max-height: 360px !important;
+		}
+	}
+}

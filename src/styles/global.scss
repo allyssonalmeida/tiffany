@@ -1,22 +1,47 @@
+@import "./mixins";
+
+@font-face {
+	font-family: "Santral";
+	src: url("../assets/fonts/Santral.otf");
+}
 @import "./reset";
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-family: "Dosis", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: "Santral", sans-serif;
 }
 
 .logo {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 
-  &--header {
-    max-height: 25px;
-  }
+	&--header {
+		max-width: 190px;
+
+		@include small-to-medium-screen {
+			max-width: 130px;
+		}
+	}
+}
+
+.breadcrumb {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	border: 2px solid #81d8d0;
+	border-right: none;
+	border-left: none;
+
+	strong {
+		font-weight: 600;
+	}
 }
 
 a,
 button {
-  cursor: pointer;
+	cursor: pointer;
 }

@@ -1,0 +1,51 @@
+// Define o tamanho mínimo de tela para telas pequenas (celulares)
+$breakpoint-small: 576px;
+
+// Define o tamanho mínimo de tela para telas médias (tablets)
+$breakpoint-medium: 768px;
+
+// Define o tamanho mínimo de tela para telas grandes (desktops)
+$breakpoint-large: 992px;
+
+// Define o tamanho mínimo de tela para telas extra-grandes (monitores grandes)
+$breakpoint-extra-large: 1200px;
+
+// Mixin para telas pequenas e médias
+@mixin small-to-medium-screen {
+	@media (max-width: ( $breakpoint-medium - 1)) {
+		@content;
+	}
+}
+
+// Mixin para telas médias e grandes
+@mixin medium-to-large-screen {
+	@media (max-width: ( $breakpoint-large - 1)) {
+		@content;
+	}
+}
+
+// Mixin para telas grandes e extra-grandes
+@mixin large-to-extra-large-screen {
+	@media (min-width: $breakpoint-large) and (max-width: ($breakpoint-extra-large - 1)) {
+		@content;
+	}
+}
+
+// Mixin para telas maiores que extra-grandes
+@mixin xxl-screen {
+	@media (min-width: $breakpoint-extra-large) {
+		@content;
+	}
+}
+
+%button {
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 0;
+	width: 100%;
+	max-width: 10rem;
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	padding: 8px;
+}

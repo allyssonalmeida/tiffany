@@ -1,187 +1,238 @@
+@import "./mixins";
+
 .header {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .topBar {
-  background: #81d8d0;
-  height: 2.75rem;
-  box-sizing: border-box;
-  padding: 0 !important;
-  &__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    p {
-      text-align: center;
-      font-weight: 600;
-      font-size: 0.875rem;
-    }
-    a {
-      color: #000;
-      border-bottom: 1px solid #000;
-      line-height: 1.71;
-      display: inline-block;
-    }
-  }
+	background: #81d8d0;
+	height: 2.75rem;
+	box-sizing: border-box;
+	padding: 0 !important;
+	&__text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			text-align: center;
+			font-weight: 600;
+			font-size: 0.875rem;
+		}
+		a {
+			color: #000;
+			border-bottom: 1px solid #000;
+			line-height: 1.71;
+			display: inline-block;
+		}
 
-  :global(.splide__arrow) {
-    height: 1rem;
-    width: 1rem;
-    svg {
-      display: none;
-    }
-    background-image: url("../assets/images/left-1.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  :global(.splide__arrow--next) {
-    transform: rotate(180deg);
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-  }
+		@include small-to-medium-screen {
+			p,
+			a {
+				font-size: 0.725rem;
+			}
+			p {
+				padding: 0 30px;
+			}
+		}
+	}
 
-  :global(.splide__track) {
-    height: 100%;
-  }
+	:global(.splide__arrow) {
+		height: 1rem;
+		width: 1rem;
+		background: transparent;
+		svg {
+			display: none;
+		}
+		background-image: url("../assets/images/left-1.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	:global(.splide__arrow--next) {
+		transform: rotate(180deg);
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+	}
+
+	:global(.splide__track) {
+		height: 100%;
+	}
 }
 .headerBar {
-  border-top: 0.25rem solid #81d8d0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  column-gap: 1rem;
+	border-top: 0.25rem solid #81d8d0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	column-gap: 1rem;
 
-  &__menu {
-    display: none;
-    @media screen and (max-width: 1023px) {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: max-content;
-      font-size: 0;
-      padding: 0 0.5rem;
-      border: none;
-      background-color: transparent;
+	@include small-to-medium-screen {
+		padding: 1rem 0.5rem;
+	}
 
-      &::before {
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-image: url("../assets/images/menu.svg");
-      }
+	&__menu {
+		display: none;
+		@media screen and (max-width: 1023px) {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			max-width: max-content;
+			font-size: 0;
+			padding: 0 0.5rem;
+			border: none;
+			background-color: transparent;
 
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/hamburger-1.gif");
-        }
-      }
-    }
-  }
+			&::before {
+				content: "";
+				width: 1rem;
+				height: 1rem;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-image: url("../assets/images/menu.svg");
+			}
 
-  &__item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: max-content;
-    font-size: 0;
-    padding: 0 0.5rem;
-    color: #000;
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/hamburger-1.gif");
+				}
+			}
+		}
+	}
 
-    &::before {
-      content: "";
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
+	&__right,
+	&__left {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		column-gap: 1.75rem;
 
-    &--search {
-      &::before {
-        background-image: url("../assets/images/search-1.svg");
-      }
+		@include small-to-medium-screen {
+			column-gap: 0.5rem;
+		}
+	}
+	&__right {
+		justify-content: flex-end;
+	}
 
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/search-icon.gif");
-        }
-      }
-    }
-    &--location {
-      &::before {
-        background-image: url("../assets/images/location.svg");
-      }
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/store-locator.gif");
-        }
-      }
-    }
+	&__item {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: max-content;
+		font-size: 0;
+		padding: 0 0.5rem;
+		color: #000;
 
-    &--contact {
-      font-size: 0.875rem;
-      column-gap: 0.5rem;
-      &::before {
-        background-image: url("../assets/images/concierge.svg");
-      }
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/customer-service.gif");
-        }
-      }
-    }
+		&::before {
+			content: "";
+			display: block;
+			width: 1rem;
+			height: 1rem;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
 
-    &--appointment {
-      font-size: 0.875rem;
-      column-gap: 0.5rem;
-      &::before {
-        background-image: url("../assets/images/calendar.svg");
-      }
+		&--search {
+			&::before {
+				background-image: url("../assets/images/search-1.svg");
+			}
 
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/calendar.gif");
-        }
-      }
-    }
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/search-icon.gif");
+				}
+			}
+		}
+		&--location {
+			&::before {
+				background-image: url("../assets/images/location.svg");
+			}
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/store-locator.gif");
+				}
+			}
 
-    &--account {
-      &::before {
-        background-image: url("../assets/images/account.svg");
-      }
+			@include small-to-medium-screen {
+				display: none;
+			}
+		}
 
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/my-account.gif");
-        }
-      }
-    }
+		&--contact {
+			font-size: 0.875rem;
+			column-gap: 0.5rem;
+			&::before {
+				background-image: url("../assets/images/concierge.svg");
+			}
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/customer-service.gif");
+				}
+			}
+		}
 
-    &--wishlist {
-      &::before {
-        background-image: url("../assets/images/wishlist.svg");
-      }
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/wishlisticon-empty.gif");
-        }
-      }
-    }
+		&--appointment {
+			font-size: 0.875rem;
+			column-gap: 0.5rem;
+			&::before {
+				background-image: url("../assets/images/calendar.svg");
+			}
 
-    &--shoppingbag {
-      &::before {
-        background-image: url("../assets/images/shopping-bag.svg");
-      }
-      &:hover {
-        &::before {
-          background-image: url("../assets/images/shoppingbag-empty.gif");
-        }
-      }
-    }
-  }
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/calendar.gif");
+				}
+			}
+		}
+
+		&--account {
+			&::before {
+				background-image: url("../assets/images/account.svg");
+			}
+
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/my-account.gif");
+				}
+			}
+		}
+
+		&--wishlist {
+			&::before {
+				background-image: url("../assets/images/wishlist.svg");
+			}
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/wishlisticon-empty.gif");
+				}
+			}
+		}
+
+		&--shoppingbag {
+			&::before {
+				background-image: url("../assets/images/shopping-bag.svg");
+			}
+			&:hover {
+				&::before {
+					background-image: url("../assets/images/shoppingbag-empty.gif");
+				}
+			}
+		}
+
+		&--location,
+		&--contact,
+		&--appointment {
+			@include medium-to-large-screen {
+				display: none;
+			}
+		}
+		&--search,
+		&--account {
+			@include small-to-medium-screen {
+				display: none;
+			}
+		}
+	}
 }
