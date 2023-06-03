@@ -1,0 +1,115 @@
+@import "./mixins";
+.menu {
+	&__desktop {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 98;
+	}
+
+	&__list {
+		padding: 10px 0;
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		display: block;
+		padding: 0.5rem 1.5rem;
+		font-size: 0.875rem;
+		font-weight: 300;
+
+		> a {
+			padding-bottom: 1px;
+
+			&:hover {
+				border-bottom: 2px solid #81d8d0;
+			}
+		}
+
+		&.active {
+			> a {
+				border-bottom: 2px solid #81d8d0;
+			}
+		}
+	}
+}
+.submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	margin: 0 auto !important;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 1rem 2rem;
+
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start !important;
+		gap: 0.5rem;
+		column-count: auto;
+		column-fill: auto;
+		max-width: 1176px;
+		margin: 0 auto;
+		align-items: flex-start !important;
+	}
+
+	&__banner {
+		flex: 0 0 50%;
+		&--card {
+			margin: 0;
+			padding: 0;
+			max-width: 100%;
+		}
+	}
+
+	&--Fragrance {
+		.submenu__banner {
+			flex: 0 0 75%;
+		}
+	}
+
+	&__item {
+		flex-basis: 100%;
+		padding-right: 41px;
+
+		& > strong {
+			font-weight: 600;
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+.thirdlevel-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&__item {
+		display: block;
+		width: 100%;
+		padding: 0.75rem 0;
+		text-align: left;
+
+		a {
+			text-align: left;
+			line-height: 1.5;
+			@extend %hover-effect;
+			border: none !important;
+
+			&:hover {
+				background-size: 100% 1px;
+				font-weight: 300;
+			}
+		}
+	}
+}

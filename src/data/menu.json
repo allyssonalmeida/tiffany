@@ -542,6 +542,451 @@
 						"url": "#"
 					}
 				}
+			},
+			{
+				"name": "Home & Acessories",
+				"href": "#",
+				"children": [
+					{
+						"name": "Shop by category",
+						"menu": [
+							{
+								"name": "Necklaces & Pendants",
+								"href": "#"
+							},
+							{
+								"name": "Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Bracelets",
+								"href": "#"
+							},
+							{
+								"name": "Rings",
+								"href": "#"
+							},
+							{
+								"name": "Fine Watches",
+								"href": "#"
+							},
+							{
+								"name": "Brooches",
+								"href": "#"
+							},
+							{
+								"name": "Charms",
+								"href": "#"
+							},
+							{
+								"name": "Men's Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Categories",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Curated Shops",
+						"menu": [
+							{
+								"name": "Gifts for Her",
+								"href": "#"
+							},
+							{
+								"name": "Most Popular Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "New Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Online Exclusives",
+								"href": "#"
+							},
+							{
+								"name": "High Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Bold Silver Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Dianty Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Hoop Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Stacking Rings",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Metal",
+						"menu": [
+							{
+								"name": "Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Rose Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Platinum Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Sterling Silver Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Gemstone",
+						"menu": [
+							{
+								"name": "Diamond Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Pearl Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Aquamarine Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Colored Gemstone Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Featured Collections",
+						"menu": [
+							{
+								"name": "Tiffany Lock",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany T",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany HardWear",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Knot",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Victoria",
+								"href": "#"
+							},
+							{
+								"name": "Return to Tiffany",
+								"href": "#"
+							},
+							{
+								"name": "Elsa Peretti",
+								"href": "#"
+							},
+							{
+								"name": "Tifanny & Co. Schlumberger",
+								"href": "#"
+							},
+							{
+								"name": "Paloma Picasso",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Collections",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": null
+			},
+			{
+				"name": "Fragrance",
+				"href": "#",
+				"children": [
+					{
+						"name": "Shop By Category",
+						"menu": [
+							{
+								"name": "Graduation",
+								"href": "#"
+							},
+							{
+								"name": "Her",
+								"href": "#"
+							},
+							{
+								"name": "Him",
+								"href": "#"
+							},
+							{
+								"name": "Baby",
+								"href": "#"
+							},
+							{
+								"name": "The Home",
+								"href": "#"
+							},
+							{
+								"name": "The Couple",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Gifts",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": {
+					"media": {
+						"type": "image",
+						"url": "//media.tiffany.com/is/image/tiffanydm/ROSEGOLDFRAGRANCE_DOTCOM_FLYOUT?$tile$&wid=1760&hei=608",
+						"alt": "Tiffany & Co. Rose Gold Eau de Parfum"
+					},
+					"title": "Tiffany & Co. Rose Gold Eau de Parfum",
+					"cta": {
+						"text": "Shop the New Fragrance",
+						"url": "#"
+					}
+				}
+			},
+			{
+				"name": "Men's",
+				"href": "#",
+				"children": [
+					{
+						"name": "Shop By Category",
+						"menu": [
+							{
+								"name": "Graduation",
+								"href": "#"
+							},
+							{
+								"name": "Her",
+								"href": "#"
+							},
+							{
+								"name": "Him",
+								"href": "#"
+							},
+							{
+								"name": "Baby",
+								"href": "#"
+							},
+							{
+								"name": "The Home",
+								"href": "#"
+							},
+							{
+								"name": "The Couple",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Gifts",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Curated Shops",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop By Collection",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": {
+					"media": {
+						"type": "image",
+						"url": "https://media.tiffany.com/is/image/tiffanydm/LOCK-Flyout-Desktop-1?$tile$&wid=1168&hei=608&fmt=webp",
+						"alt": "For the Modern Man"
+					},
+					"title": "For the Modern Man",
+					"cta": {
+						"text": "Shop Men's Jewelry",
+						"url": "#"
+					}
+				}
+			},
+			{
+				"name": "Stories",
+				"href": "#",
+				"children": [
+					{
+						"name": "Shop By Category",
+						"menu": [
+							{
+								"name": "Graduation",
+								"href": "#"
+							},
+							{
+								"name": "Her",
+								"href": "#"
+							},
+							{
+								"name": "Him",
+								"href": "#"
+							},
+							{
+								"name": "Baby",
+								"href": "#"
+							},
+							{
+								"name": "The Home",
+								"href": "#"
+							},
+							{
+								"name": "The Couple",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Gifts",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Curated Shops",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop By Collection",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": {
+					"media": {
+						"type": "image",
+						"url": "https://media.tiffany.com/is/image/tiffanydm/T-Flyout-Desktop?$tile$&wid=1168&hei=608&fmt=webp",
+						"alt": "This is Tiffany T"
+					},
+					"title": "This is Tiffany T",
+					"cta": {
+						"text": "Explore the Collection",
+						"url": "#"
+					}
+				}
 			}
 		]
 	},

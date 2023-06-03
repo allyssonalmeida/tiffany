@@ -1,7 +1,6 @@
 @import "./mixins";
 
 .banner {
-	/* BOX STRUCTURE */
 	display: flex;
 
 	&--card,
@@ -22,7 +21,6 @@
 		max-width: 410px;
 		border: 1px solid #ccc;
 		overflow: hidden;
-
 		@include small-to-medium-screen {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -39,7 +37,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-bottom: 3.5rem;
-
 		@include small-to-medium-screen {
 			display: flex;
 			flex-direction: column;
@@ -59,13 +56,18 @@
 		width: 100%;
 		max-width: 1600px;
 		margin: 0 auto;
-
 		@include medium-to-large-screen {
 			flex-direction: column;
 		}
 	}
 
-	/* IMAGE & VIDEO */
+	&--menu-card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* BOX MEDIA */
 	&__media {
 		width: 100%;
 		img {
@@ -97,16 +99,21 @@
 			grid-column: 1 / -1;
 			grid-row: 1;
 		}
+
+		&--menu-card {
+			a {
+				border: none !important;
+			}
+		}
 	}
 
-	/* TEXT & CTA */
+	/* BOX CONTENT */
 	&__content {
 		display: block;
 		text-align: center;
 
 		a {
 			@extend %hover-effect;
-
 			&:hover {
 				background-size: 100% 1px;
 			}
@@ -120,11 +127,9 @@
 			}
 			a {
 				@extend %cta;
-
 				@extend %hover-effect;
 				font-size: 1rem;
 				font-weight: 400;
-
 				&:hover {
 					background-size: 100% 1px;
 				}
@@ -284,6 +289,25 @@
 
 		&--fullbanner-reverse {
 			grid-column: 1;
+		}
+
+		&--menu-card {
+			strong {
+				display: block;
+				font-weight: 300;
+				font-size: 1rem;
+				text-align: left;
+				padding-top: 0.5rem;
+			}
+			div {
+				text-align: left;
+				padding: 0.5rem 0;
+				a {
+					@extend %cta;
+					font-weight: 500;
+					text-align: left;
+				}
+			}
 		}
 	}
 }
