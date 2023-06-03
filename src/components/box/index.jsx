@@ -1,7 +1,11 @@
 import { PropTypes } from 'prop-types'
+import { useMediaQuery } from 'react-responsive'
 import style from '../../styles/Box.module.scss'
 
 const Box = ({ type, content }) => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 720px)'
+  })
 
   return (
     <div className={`${style.banner} ${style[`banner--${type}`]}`}>
@@ -10,7 +14,7 @@ const Box = ({ type, content }) => {
           content.media.type === 'image' &&
           <a href={content.cta.url} >
             <img
-              src={content.media.url}
+              src={isMobile ? content.media.mobileUrl ? content.media.mobileUrl : content.media.url : content.media.url}
               alt={content.media.alt}
             />
           </a>
@@ -18,7 +22,7 @@ const Box = ({ type, content }) => {
         {
           content.media.type === 'video' &&
           <video
-            src={content.media.url}
+            src={isMobile ? content.media.mobileUrl ? content.media.mobileUrl : content.media.url : content.media.url}
             width="100%"
             height="100%"
             playsInline

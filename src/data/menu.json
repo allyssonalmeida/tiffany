@@ -4,14 +4,14 @@
 		"children": [
 			{
 				"name": "Jewelry",
-				"href": "#jewelry",
+				"href": "#",
 				"children": [
 					{
 						"name": "Shop by category",
 						"menu": [
 							{
 								"name": "Necklaces & Pendants",
-								"href": "#necklaces&pendants"
+								"href": "#"
 							},
 							{
 								"name": "Earrings",
@@ -175,7 +175,373 @@
 							}
 						]
 					}
-				]
+				],
+				"banner": null
+			},
+			{
+				"name": "Gifts",
+				"href": "#",
+				"children": [
+					{
+						"name": "Gifts for...",
+						"menu": [
+							{
+								"name": "Graduation",
+								"href": "#"
+							},
+							{
+								"name": "Her",
+								"href": "#"
+							},
+							{
+								"name": "Him",
+								"href": "#"
+							},
+							{
+								"name": "Baby",
+								"href": "#"
+							},
+							{
+								"name": "The Home",
+								"href": "#"
+							},
+							{
+								"name": "The Couple",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Gifts",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Discovery",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": {
+					"media": {
+						"type": "image",
+						"url": "https://media.tiffany.com/is/image/tiffanydm/Gifts-For-Her_Nav_Flyout_Evergreen-1?$tile$&wid=1168&hei=608&fmt=webp",
+						"alt": "Gifts to Her"
+					},
+					"title": "Gifts to Her",
+					"cta": {
+						"text": "Shop Now",
+						"url": "#"
+					}
+				}
+			},
+			{
+				"name": "Love & Engagement",
+				"href": "#",
+				"children": [
+					{
+						"name": "Engagement",
+						"menu": [
+							{
+								"name": "Necklaces & Pendants",
+								"href": "#"
+							},
+							{
+								"name": "Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Bracelets",
+								"href": "#"
+							},
+							{
+								"name": "Rings",
+								"href": "#"
+							},
+							{
+								"name": "Fine Watches",
+								"href": "#"
+							},
+							{
+								"name": "Brooches",
+								"href": "#"
+							},
+							{
+								"name": "Charms",
+								"href": "#"
+							},
+							{
+								"name": "Men's Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Categories",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "The Tiffany Difference",
+						"menu": [
+							{
+								"name": "Gifts for Her",
+								"href": "#"
+							},
+							{
+								"name": "Most Popular Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "New Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Online Exclusives",
+								"href": "#"
+							},
+							{
+								"name": "High Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Bold Silver Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Dianty Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Hoop Earrings",
+								"href": "#"
+							},
+							{
+								"name": "Stacking Rings",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Shape",
+						"menu": [
+							{
+								"name": "Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Rose Gold Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Platinum Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Sterling Silver Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop by Setting",
+						"menu": [
+							{
+								"name": "Diamond Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Pearl Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Aquamarine Jewelry",
+								"href": "#"
+							},
+							{
+								"name": "Colored Gemstone Jewelry",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Engagement Ring Collection",
+						"menu": [
+							{
+								"name": "Tiffany Lock",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany T",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany HardWear",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Knot",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Victoria",
+								"href": "#"
+							},
+							{
+								"name": "Return to Tiffany",
+								"href": "#"
+							},
+							{
+								"name": "Elsa Peretti",
+								"href": "#"
+							},
+							{
+								"name": "Tifanny & Co. Schlumberger",
+								"href": "#"
+							},
+							{
+								"name": "Paloma Picasso",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Collections",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": null
+			},
+			{
+				"name": "Fine Watches",
+				"href": "#",
+				"children": [
+					{
+						"name": "Shop By Category",
+						"menu": [
+							{
+								"name": "Graduation",
+								"href": "#"
+							},
+							{
+								"name": "Her",
+								"href": "#"
+							},
+							{
+								"name": "Him",
+								"href": "#"
+							},
+							{
+								"name": "Baby",
+								"href": "#"
+							},
+							{
+								"name": "The Home",
+								"href": "#"
+							},
+							{
+								"name": "The Couple",
+								"href": "#"
+							},
+							{
+								"name": "Explore All Gifts",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Curated Shops",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					},
+					{
+						"name": "Shop By Collection",
+						"menu": [
+							{
+								"name": "Gifts $750 & Under",
+								"href": "#"
+							},
+							{
+								"name": "Tiffany Blue Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gifts for Personalize",
+								"href": "#"
+							},
+							{
+								"name": "Anniversary Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Birthday Gifts",
+								"href": "#"
+							},
+							{
+								"name": "Gift Cards",
+								"href": "#"
+							}
+						]
+					}
+				],
+				"banner": {
+					"media": {
+						"type": "image",
+						"url": "https://media.tiffany.com/is/image/tiffanydm/WATCH-Flyout-Desktop?$tile$&wid=1168&hei=608&fmt=webp",
+						"alt": "It's About Time"
+					},
+					"title": "It's About Time",
+					"cta": {
+						"text": "Shop All Fine Watches",
+						"url": "#"
+					}
+				}
 			}
 		]
 	},

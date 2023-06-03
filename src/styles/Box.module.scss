@@ -13,6 +13,9 @@
 
 	&--card {
 		margin: 0 3rem;
+		@include small-to-medium-screen {
+			margin: 0;
+		}
 	}
 
 	&--stories {

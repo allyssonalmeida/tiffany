@@ -23,9 +23,16 @@
 		line-height: 2.75rem;
 
 		p {
-			text-align: center;
+			line-height: 2.75rem;
+			align-self: center;
 			font-weight: 600;
 			font-size: 0.875rem;
+			text-align: center;
+
+			@include small-to-medium-screen {
+				line-height: 1;
+				padding-top: 0.5rem !important;
+			}
 		}
 		a {
 			color: #000;

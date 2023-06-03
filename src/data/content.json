@@ -1,9 +1,24 @@
 {
+	"hero": {
+		"media": {
+			"type": "video",
+			"url": "https://media.tiffany.com/is/content/tiffanydm/ZOE_HARDWEAR_LIKEYOUMEANIT_Mobile",
+			"mobileUrl": "https://media.tiffany.com/is/content/tiffanydm/ZOE_HARDWEAR_LIKEYOUMEANIT_Desktop-1",
+			"alt": ""
+		},
+		"title": "This is Tiffany HardWear",
+		"text": "Our brand ambassadors redefine Tiffany HardWear in our latest campaign",
+		"cta": {
+			"text": "Shop the Collection",
+			"url": "#"
+		}
+	},
 	"banners": [
 		{
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/QuickLink-HP-50-50-Product-StudEarrings-Desktop?$tile$&wid=1088&hei=1360&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/QuickLink-HP-50-50-Product-StudEarrings-Mobile?$tile$&wid=720&hei=720",
 				"alt": "Gifts for Graduates"
 			},
 			"title": "Gifts for Graduates",
@@ -16,6 +31,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/T-HP_50-50-opt6-Desktop?$tile$&wid=1088&hei=1360&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/QuickLink-HP-50-50-Product-StudEarrings-Desktop?$tile$&wid=1088&hei=1360",
 				"alt": "How Do You Tiffany T?"
 			},
 			"title": "How Do You Tiffany T?",
@@ -30,6 +46,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/Necklace_op3?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/Necklace_op3?$tile$&&fmt=webp",
 				"alt": "Necklaces & Pendants"
 			},
 			"cta": {
@@ -41,6 +58,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/Earrings?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/Earrings?$tile$&&fmt=webp",
 				"alt": "Earrings"
 			},
 			"cta": {
@@ -52,6 +70,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/Rings?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/Rings?$tile$&&fmt=webp",
 				"alt": "Rings"
 			},
 			"cta": {
@@ -63,6 +82,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/Bracelet?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/Bracelet?$tile$&&fmt=webp",
 				"alt": "Bracelets"
 			},
 			"cta": {
@@ -74,6 +94,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/EngagementRings?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/EngagementRings?$tile$&&fmt=webp",
 				"alt": "Engagement Rings"
 			},
 			"cta": {
@@ -85,6 +106,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/HomeDecor?$tile$&&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/HomeDecor?$tile$&&fmt=webp",
 				"alt": "Home Decor"
 			},
 			"cta": {
@@ -96,7 +118,8 @@
 	"landmark": {
 		"media": {
 			"type": "video",
-			"url": "//media.tiffany.com/is/content/tiffanydm/TiffanyLandmark_6sCutdownFloral_1920x1080",
+			"url": "https://media.tiffany.com/is/content/tiffanydm/TiffanyLandmark_6sCutdownFloral_1920x1080",
+			"mobileUrl": "https://media.tiffany.com/is/content/tiffanydm/TiffanyLandmark_6sCutdownFloral_1080x1080",
 			"alt": "Now Open: The Landmark"
 		},
 		"title": "Now Open: The Landmark",
@@ -111,6 +134,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/BeyonceTour-HP-Stories?$tile$&wid=736&hei=920&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/BeyonceTour-HP-Stories?$tile$&wid=736&hei=920&fmt=webp",
 				"alt": "Beyoncé Tours in Tiffany & Co."
 			},
 			"title": "Beyoncé Tours in Tiffany & Co.",
@@ -124,6 +148,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/LOCK-HP-WhatIsNew-Desktop-1?$tile$&wid=736&hei=920&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/LOCK-HP-WhatIsNew-Desktop-1?$tile$&wid=736&hei=920&fmt=webp",
 				"alt": "Tiffany Lock"
 			},
 			"title": "Tiffany Lock",
@@ -137,6 +162,7 @@
 			"media": {
 				"type": "image",
 				"url": "//media.tiffany.com/is/image/tiffanydm/T-HP-WhatIsNew-Desktop-JIMIN?$tile$&wid=736&hei=920",
+				"mobileUrl": "//media.tiffany.com/is/image/tiffanydm/T-HP-WhatIsNew-Desktop-JIMIN?$tile$&wid=736&hei=920",
 				"alt": "This Is Tiffany T"
 			},
 			"title": "This Is Tiffany T",
@@ -152,6 +178,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/2023_GW-HP-FWMH-Desktop?$tile$&wid=2992&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/2023_GW-HP-FWMH-Mobile?$tile$&wid=720&fmt=webp",
 				"alt": "Love Your Way"
 			},
 			"title": "Love Your Way",
@@ -165,6 +192,7 @@
 			"media": {
 				"type": "image",
 				"url": "https://media.tiffany.com/is/image/tiffanydm/2021_Bloomgberg-HP_FWMH-Desktop2?$tile$&wid=2992&fmt=webp",
+				"mobileUrl": "https://media.tiffany.com/is/image/tiffanydm/2021_Bloomgberg-HP_FWMH-Mobile?$tile$&wid=720&fmt=webp",
 				"alt": "From the Source"
 			},
 			"title": "From the Source",
