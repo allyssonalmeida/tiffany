@@ -3,6 +3,12 @@
 .header {
 	display: flex;
 	flex-direction: column;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: #fff;
+	position: fixed;
 }
 .topBar {
 	background: #81d8d0;
@@ -39,13 +45,18 @@
 		}
 	}
 }
+
 .headerBar {
 	border-top: 0.25rem solid #81d8d0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 1.5rem;
+	padding: 0 1.5rem;
+	padding-right: 0;
 	column-gap: 1rem;
+	height: 56px;
+	position: sticky;
+	top: 0;
 
 	@include small-to-medium-screen {
 		padding: 1rem 0.5rem;
@@ -94,6 +105,14 @@
 	}
 	&__right {
 		justify-content: flex-end;
+		max-width: 560px !important;
+		height: 100%;
+		padding-right: 1.5rem;
+		position: relative;
+
+		&:hover {
+			background-color: #81d8d0;
+		}
 	}
 
 	&__item {
@@ -213,6 +232,119 @@
 			@include small-to-medium-screen {
 				display: none;
 			}
+		}
+	}
+
+	&__dropdown {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		max-width: 560px;
+		transition: max-height 1s;
+		max-height: 0;
+		overflow: hidden;
+		&--active {
+			display: block;
+			top: 100%;
+			min-height: 100vh;
+			max-height: 100dvh;
+			z-index: 99;
+		}
+	}
+}
+
+.bag {
+	&__count {
+		font-size: 0.725rem;
+		font-weight: 700;
+		padding-left: 0.5rem;
+	}
+}
+
+.logo {
+	&__wrapper {
+		width: 100%;
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+.dropdown {
+	&__child {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		width: 100%;
+		padding: 1rem;
+		background: #fff;
+		transition: height 1s easew;
+	}
+
+	&__content {
+		margin-top: 4rem;
+		strong {
+			font-size: 1.5rem;
+		}
+
+		p {
+			margin: 1rem 0;
+			font-size: 0.875rem;
+			line-height: 1.5;
+		}
+	}
+
+	&__ctas {
+		a {
+			@extend %cta;
+			margin-top: 1rem;
+		}
+	}
+}
+
+.account {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.minicart {
+	&__items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-item {
+		display: grid;
+		grid-template-columns: minmax(160px, 1fr) 1fr;
+		grid-template-rows: auto;
+		grid-auto-rows: 0;
+		grid-auto-columns: 0;
+
+		&__image {
+			img {
+				object-fit: contain;
+				width: 100%;
+			}
+		}
+
+		&__summary {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+			font-size: 0.825rem;
+			padding-left: 0.5rem;
+		}
+
+		&__remove {
+			@extend %cta;
+			display: inline-block;
+			text-align: left;
+			background: transparent;
+			border: none;
+			padding: 0;
 		}
 	}
 }

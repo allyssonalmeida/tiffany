@@ -1,0 +1,178 @@
+{
+	"banners": [
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/QuickLink-HP-50-50-Product-StudEarrings-Desktop?$tile$&wid=1088&hei=1360&fmt=webp",
+				"alt": "Gifts for Graduates"
+			},
+			"title": "Gifts for Graduates",
+			"cta": {
+				"text": "Shop Now",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/T-HP_50-50-opt6-Desktop?$tile$&wid=1088&hei=1360&fmt=webp",
+				"alt": "How Do You Tiffany T?"
+			},
+			"title": "How Do You Tiffany T?",
+			"cta": {
+				"text": "Shop Now",
+				"url": "#"
+			}
+		}
+	],
+	"categories": [
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/Necklace_op3?$tile$&&fmt=webp",
+				"alt": "Necklaces & Pendants"
+			},
+			"cta": {
+				"text": "Necklaces & Pendants",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/Earrings?$tile$&&fmt=webp",
+				"alt": "Earrings"
+			},
+			"cta": {
+				"text": "Earrings",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/Rings?$tile$&&fmt=webp",
+				"alt": "Rings"
+			},
+			"cta": {
+				"text": "Rings",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/Bracelet?$tile$&&fmt=webp",
+				"alt": "Bracelets"
+			},
+			"cta": {
+				"text": "Bracelets",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/EngagementRings?$tile$&&fmt=webp",
+				"alt": "Engagement Rings"
+			},
+			"cta": {
+				"text": "Engagement Rings",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/HomeDecor?$tile$&&fmt=webp",
+				"alt": "Home Decor"
+			},
+			"cta": {
+				"text": "Home Decor",
+				"url": "#"
+			}
+		}
+	],
+	"landmark": {
+		"media": {
+			"type": "video",
+			"url": "//media.tiffany.com/is/content/tiffanydm/TiffanyLandmark_6sCutdownFloral_1920x1080",
+			"alt": "Now Open: The Landmark"
+		},
+		"title": "Now Open: The Landmark",
+		"text": "A legacy of brilliance continues with The Landmark. Discover a new Tiffany & Co. for a new era at 727 Fifth Avenue, New York.",
+		"cta": {
+			"text": "Learn More",
+			"url": "#"
+		}
+	},
+	"stories": [
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/BeyonceTour-HP-Stories?$tile$&wid=736&hei=920&fmt=webp",
+				"alt": "Beyoncé Tours in Tiffany & Co."
+			},
+			"title": "Beyoncé Tours in Tiffany & Co.",
+			"text": "The House is the official jeweler for the RENAISSANCE WORLD TOUR.",
+			"cta": {
+				"text": "Learn More",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/LOCK-HP-WhatIsNew-Desktop-1?$tile$&wid=736&hei=920&fmt=webp",
+				"alt": "Tiffany Lock"
+			},
+			"title": "Tiffany Lock",
+			"text": "No rules. All welcome.",
+			"cta": {
+				"text": "Explore all the collection",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "//media.tiffany.com/is/image/tiffanydm/T-HP-WhatIsNew-Desktop-JIMIN?$tile$&wid=736&hei=920",
+				"alt": "This Is Tiffany T"
+			},
+			"title": "This Is Tiffany T",
+			"text": "Our favorite letter, everyone’s favorite collection. ",
+			"cta": {
+				"text": "Learn More",
+				"url": "#"
+			}
+		}
+	],
+	"fullbanners": [
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/2023_GW-HP-FWMH-Desktop?$tile$&wid=2992&fmt=webp",
+				"alt": "Love Your Way"
+			},
+			"title": "Love Your Way",
+			"text": "You'll know who it's for. You'll know when it's time. You'll just know.",
+			"cta": {
+				"text": "Explore Love & Engagement",
+				"url": "#"
+			}
+		},
+		{
+			"media": {
+				"type": "image",
+				"url": "https://media.tiffany.com/is/image/tiffanydm/2023_GW-HP-FWMH-Desktop?$tile$&wid=2992&fmt=webp",
+				"alt": "Love Your Way"
+			},
+			"title": "Love Your Way",
+			"text": "You'll know who it's for. You'll know when it's time. You'll just know.",
+			"cta": {
+				"text": "Explore Love & Engagement",
+				"url": "#"
+			}
+		}
+	]
+}

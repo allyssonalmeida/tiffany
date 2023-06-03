@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import style from '../../styles/Shelf.module.scss'
 import items from '../../data/products.json'
+import Product from '../product';
 
 
 const options = {
@@ -12,7 +13,21 @@ const options = {
   arrows: true,
   speed: 1000,
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 740,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 }
 
 const Shelf = () => {
@@ -26,27 +41,7 @@ const Shelf = () => {
         products &&
         <Slider {...options}>
           {products.map((product, index) => (
-            <div key={index} className={style.product}>
-              <button className={`${style.wishlist}`} title="Add to Wishlist">
-                <div className={style.wishlist__icon}></div>
-              </button>
-              <a href="#product" key={index} className={style.product__image}>
-                <img src={product.images[0].url} alt={product.images[0].alt} />
-              </a>
-              <div className={style.product__summary}>
-                <strong className={style.product__name}>
-                  {product.name}
-                </strong>
-                <button className={style.product__cta}>
-                  <span className={style.product__price}>
-                    {(product.price / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
-                  </span>
-                  <span className={style.product__addToCart}>
-                    Add to Bag
-                  </span>
-                </button>
-              </div>
-            </div>
+            <Product product={product} key={index} />
           ))}
         </Slider>
       }

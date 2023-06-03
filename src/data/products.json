@@ -2,7 +2,7 @@
 	"products": [
 		{
 			"id": 1,
-			"name": "Tiffany HardWear:Graduated Link Necklace",
+			"name": "Tiffany HardWear: Graduated Link Necklace",
 			"price": 1750000,
 			"available": 10,
 			"images": [
@@ -38,7 +38,7 @@
 		},
 		{
 			"id": 4,
-			"name": "Pearl Bracelet in Silva, 5-6 mm",
+			"name": "Pearl Bracelet in Silva",
 			"price": 97500,
 			"available": 3,
 			"images": [

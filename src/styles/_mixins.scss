@@ -39,6 +39,9 @@ $breakpoint-extra-large: 1200px;
 }
 
 %button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: #fff;
 	border: 1px solid #000;
 	border-radius: 0;
@@ -48,4 +51,23 @@ $breakpoint-extra-large: 1200px;
 	color: #000;
 	font-weight: 600;
 	padding: 8px;
+	font-size: 0.825rem;
+}
+
+%cta {
+	color: #000;
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.5;
+
+	&::after {
+		display: inline-block;
+		margin-left: 0.25rem;
+		content: "";
+		width: 0.5rem;
+		height: 0.5rem;
+		background-image: url("../assets/images/right-1.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
 }

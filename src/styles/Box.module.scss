@@ -1,0 +1,224 @@
+@import "./mixins";
+
+.banner {
+	display: flex;
+
+	&--card,
+	&--stories {
+		flex-direction: column;
+		align-items: center;
+		max-width: 512px;
+	}
+
+	&--fullbanners {
+		max-width: 100%;
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		@include small-to-medium-screen {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+			align-items: flex-start;
+			width: 100%;
+			text-align: left;
+		}
+	}
+
+	&--stories {
+		max-width: 410px;
+		border: 1px solid #ccc;
+		overflow: hidden;
+
+		@include small-to-medium-screen {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			max-width: 100%;
+			height: auto;
+			max-height: 400px;
+		}
+	}
+
+	&--category {
+		max-width: 252px;
+		flex-direction: column;
+	}
+
+	&--fullbanners,
+	&--video-banner {
+		width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+
+		@include medium-to-large-screen {
+			flex-direction: column;
+		}
+	}
+
+	&__media {
+		width: 100%;
+		img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		&--card {
+			margin-bottom: 1rem;
+		}
+
+		&--stories {
+			overflow: hidden;
+			padding: 1.5rem;
+			img {
+				display: block;
+				width: 100%;
+			}
+
+			@include small-to-medium-screen {
+				padding: 0.5rem;
+			}
+		}
+
+		&--fullbanners {
+		}
+	}
+
+	&__content {
+		display: block;
+		text-align: center;
+
+		&--card,
+		&--fullbanners,
+		&--stories {
+			strong {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			a {
+				@extend %cta;
+				font-size: 1rem;
+				font-weight: 400;
+			}
+		}
+
+		&--stories {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			gap: 1rem;
+			padding: 1.5rem;
+
+			@include small-to-medium-screen {
+				padding: 0.5rem;
+				gap: 0;
+			}
+
+			strong,
+			p,
+			a {
+				text-align: left;
+			}
+
+			strong {
+				font-size: 1.12rem;
+				min-height: 2.24rem;
+
+				@include small-to-medium-screen {
+					line-height: 1.5;
+				}
+			}
+
+			p {
+				font-weight: 300;
+				line-height: 1.5;
+				min-height: 3rem;
+				font-size: 0.875rem;
+
+				@include small-to-medium-screen {
+					display: none;
+				}
+			}
+			a {
+				font-weight: 300;
+				margin-bottom: 2rem;
+
+				@include small-to-medium-screen {
+					display: none;
+				}
+			}
+		}
+
+		&--category {
+			margin-top: 0.5rem;
+			display: block;
+			font-family: Santral W01;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 0.875rem;
+			color: #000;
+			font-weight: 600;
+			line-height: 1.71;
+			text-align: center;
+		}
+
+		&--video-banner {
+			width: 100%;
+			max-width: 480px;
+			padding: 0 3rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			row-gap: 1rem;
+
+			font-family: "Santral W01";
+			color: #000;
+
+			strong {
+				font-size: 1.5rem;
+				line-height: 1.33;
+				font-weight: 600;
+			}
+			p {
+				font-size: 0.875rem;
+				font-weight: 400;
+				line-height: 1.75;
+				text-align: left;
+			}
+
+			a {
+				@extend %cta;
+			}
+
+			@include medium-to-large-screen {
+				max-width: 100%;
+				align-items: center;
+				margin: 2rem 0;
+
+				strong,
+				p,
+				a {
+					text-align: center;
+				}
+			}
+		}
+
+		&--fullbanners,
+		&--card {
+			@include small-to-medium-screen {
+				width: 100%;
+				align-items: flex-start;
+				text-align: left;
+				padding: 0 1rem;
+				row-gap: 1rem;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
