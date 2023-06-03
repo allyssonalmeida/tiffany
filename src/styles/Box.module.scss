@@ -1,6 +1,7 @@
 @import "./mixins";
 
 .banner {
+	/* BOX STRUCTURE */
 	display: flex;
 
 	&--card,
@@ -10,20 +11,8 @@
 		max-width: 512px;
 	}
 
-	&--fullbanners {
-		max-width: 100%;
-		position: relative;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-
-		@include small-to-medium-screen {
-			display: flex;
-			flex-direction: column;
-			row-gap: 1rem;
-			align-items: flex-start;
-			width: 100%;
-			text-align: left;
-		}
+	&--card {
+		margin: 0 3rem;
 	}
 
 	&--stories {
@@ -40,12 +29,29 @@
 		}
 	}
 
+	&--fullbanner-reverse,
+	&--fullbanner {
+		max-width: 100%;
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-bottom: 3.5rem;
+
+		@include small-to-medium-screen {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+			align-items: flex-start;
+			width: 100%;
+			text-align: left;
+		}
+	}
+
 	&--category {
 		max-width: 252px;
 		flex-direction: column;
 	}
 
-	&--fullbanners,
 	&--video-banner {
 		width: 100%;
 		max-width: 1600px;
@@ -56,6 +62,7 @@
 		}
 	}
 
+	/* IMAGE & VIDEO */
 	&__media {
 		width: 100%;
 		img {
@@ -82,26 +89,42 @@
 			}
 		}
 
-		&--fullbanners {
+		&--fullbanner-reverse,
+		&--fullbanner {
+			grid-column: 1 / -1;
+			grid-row: 1;
 		}
 	}
 
+	/* TEXT & CTA */
 	&__content {
 		display: block;
 		text-align: center;
 
+		a {
+			@extend %hover-effect;
+
+			&:hover {
+				background-size: 100% 1px;
+			}
+		}
+
 		&--card,
-		&--fullbanners,
 		&--stories {
 			strong {
 				font-size: 1.5rem;
 				font-weight: 600;
 			}
-
 			a {
 				@extend %cta;
+
+				@extend %hover-effect;
 				font-size: 1rem;
 				font-weight: 400;
+
+				&:hover {
+					background-size: 100% 1px;
+				}
 			}
 		}
 
@@ -137,13 +160,14 @@
 			p {
 				font-weight: 300;
 				line-height: 1.5;
-				min-height: 3rem;
+				min-height: 4rem;
 				font-size: 0.875rem;
 
 				@include small-to-medium-screen {
 					display: none;
 				}
 			}
+
 			a {
 				font-weight: 300;
 				margin-bottom: 2rem;
@@ -158,11 +182,10 @@
 			margin-top: 0.5rem;
 			display: block;
 			font-family: Santral W01;
-			font-weight: 400;
+			font-weight: 600;
 			font-style: normal;
 			font-size: 0.875rem;
 			color: #000;
-			font-weight: 600;
 			line-height: 1.71;
 			text-align: center;
 		}
@@ -185,6 +208,7 @@
 				line-height: 1.33;
 				font-weight: 600;
 			}
+
 			p {
 				font-size: 0.875rem;
 				font-weight: 400;
@@ -209,7 +233,6 @@
 			}
 		}
 
-		&--fullbanners,
 		&--card {
 			@include small-to-medium-screen {
 				width: 100%;
@@ -219,6 +242,45 @@
 				row-gap: 1rem;
 				margin-bottom: 2rem;
 			}
+		}
+
+		&--fullbanner-reverse,
+		&--fullbanner {
+			grid-column: 3;
+			grid-row: 1;
+			align-self: center;
+			justify-self: center;
+			width: 100%;
+			max-width: 300px;
+
+			strong {
+				@extend %header-4;
+				display: block;
+				margin-bottom: 1rem;
+				text-align: left;
+			}
+
+			p {
+				font-size: 0.875rem;
+				line-height: 24px;
+				font-family: Santral W01;
+				font-weight: 300;
+				font-style: normal;
+				margin-bottom: 1rem;
+				text-align: left;
+			}
+
+			div {
+				text-align: left;
+				a {
+					@extend %cta;
+					text-align: left;
+				}
+			}
+		}
+
+		&--fullbanner-reverse {
+			grid-column: 1;
 		}
 	}
 }

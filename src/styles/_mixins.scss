@@ -71,3 +71,30 @@ $breakpoint-extra-large: 1200px;
 		background-repeat: no-repeat;
 	}
 }
+
+%header-4 {
+	font-family: Santral W01;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.5rem;
+	color: #000;
+	line-height: 1.33;
+}
+
+%hover-effect {
+	background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			from(#00a4b7),
+			to(#00a4b7)
+		)
+		0 100% no-repeat;
+	background: linear-gradient(0, #00a4b7, #00a4b7) 0 100% no-repeat;
+	background-color: none !important;
+	background-size: 0 1px;
+	-webkit-transition: background-size 0.5s;
+	transition: background-size 0.5s;
+	text-decoration: none;
+	display: inline !important;
+}

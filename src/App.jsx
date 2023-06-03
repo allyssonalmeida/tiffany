@@ -84,7 +84,7 @@ const App = () => {
           <div className={style.fullbanners__list}>
             {
               fullbanners.map((item, index) => (
-                <Box type="fullbanners" key={index} content={item} />
+                <Box type={`${index % 2 === 0 ? 'fullbanner' : 'fullbanner-reverse'}`} key={index} content={item} />
               ))
             }
           </div>

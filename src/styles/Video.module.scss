@@ -55,9 +55,14 @@
 
 		a {
 			@extend %button;
+			@extend %hover-effect;
 			max-width: 12rem;
 			height: 2.5rem;
 			text-align: center;
+
+			&:hover {
+				background-size: 100% 1px;
+			}
 		}
 
 		@include small-to-medium-screen {
