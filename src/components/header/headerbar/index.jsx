@@ -85,6 +85,9 @@ const HeaderBar = ({ setMobileMenu }) => {
           </a>
         </div>
         <div className={`${style.headerBar__dropdown} ${style['headerBar__dropdown--right']} ${activeMenu !== '' && style['headerBar__dropdown--active']}`}>
+          <button className={style.dropdown__close} onClick={() => { setActiveMenu('') }}>
+            Close
+          </button>
           {activeMenu === 'account' && <Account />}
           {activeMenu === 'wishlist' && <Wishlist />}
           {activeMenu === 'cart' && <Minicart />}
