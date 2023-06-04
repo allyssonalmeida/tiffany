@@ -42,7 +42,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (item) => {
     const newCart = { ...cart }
-    const existingProduct = newCart.products.find(product => product.id === item.id)
+    const existingProduct = newCart?.products?.find(product => product.id === item.id)
 
     if (existingProduct) {
       existingProduct.quantity++;
@@ -70,6 +70,22 @@ export const CartProvider = ({ children }) => {
     setCart(newCart)
   }
 
+  const placeOrder = () => {
+    console.log('Finalizing Cart')
+    console.log('Order Info', cart)
+    const orders = window.localStorage.getItem('orders') ? JSON.parse(window.localStorage.getItem('orders')) : []
+    console.log('Orders', orders)
+    orders.push(cart)
+    // const newOrders = [...orders, cart]
+    console.log('New Orders: ', orders)
+    window.localStorage.setItem('orders', JSON.stringify(orders));
+    setCart({
+      orderId: uuid.v4(),
+      products: [],
+      total: 0
+    })
+  }
+
   useEffect(() => {
     console.log('initializing cart')
     initiateCart()
@@ -83,7 +99,7 @@ export const CartProvider = ({ children }) => {
   }, [cart])
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, countItems, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, countItems, removeFromCart, placeOrder }}>
       {children}
     </CartContext.Provider>
   )

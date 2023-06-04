@@ -326,6 +326,52 @@
 }
 
 .minicart {
+	padding-top: 1.5rem;
+
+	&__message {
+		p {
+			display: block;
+			font-size: 0.875rem;
+			font-weight: 300;
+			text-align: left;
+			line-height: 1.5rem;
+		}
+
+		a {
+			@extend %cta;
+			margin: 0.5rem 0;
+		}
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		padding: 1rem 0;
+		row-gap: 1rem;
+	}
+
+	&__view-bag {
+		@extend %cta;
+		@extend %hover-effect;
+		max-width: max-content;
+		&:hover {
+			background-size: 100% 1px;
+		}
+	}
+
+	&__checkout-btn {
+		display: flex;
+		justify-content: space-between;
+		padding: 1.5rem;
+		background-color: #000;
+		color: #fff;
+
+		&:hover {
+			background-color: #81d8d0;
+		}
+	}
+
 	&__items {
 		display: flex;
 		flex-direction: column;
@@ -348,18 +394,48 @@
 		&__summary {
 			display: flex;
 			flex-direction: column;
+			justify-content: flex-end;
 			row-gap: 1rem;
 			font-size: 0.825rem;
 			padding-left: 0.5rem;
+			height: 100%;
+			position: relative;
+		}
+
+		&__name {
+			display: inline-block;
+			position: absolute;
+			top: 1rem;
+			left: 0.5rem;
+			line-height: 1.5;
+			width: 100%;
+			font-size: 0.875rem;
+			padding-right: 1.5rem;
+			a {
+				@extend %hover-effect;
+
+				&:hover {
+					background-size: 100% 1px;
+				}
+			}
 		}
 
 		&__remove {
-			@extend %cta;
-			display: inline-block;
+			display: flex;
 			text-align: left;
-			background: transparent;
+			background-color: transparent;
 			border: none;
 			padding: 0;
+			margin-bottom: 1rem;
+
+			span {
+				@extend %cta;
+				@extend %hover-effect;
+
+				&:hover {
+					background-size: 100% 1px;
+				}
+			}
 		}
 	}
 }
