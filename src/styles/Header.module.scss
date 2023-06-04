@@ -266,6 +266,10 @@
 			max-height: 100dvh;
 			transform: translateY(0);
 			animation: show-down 0.5s forwards;
+			overflow-y: auto;
+			@include small-to-medium-screen {
+				top: -100%;
+			}
 		}
 	}
 }
@@ -318,6 +322,7 @@
 	}
 
 	&__close {
+		display: none;
 		@include small-to-medium-screen {
 			display: block;
 			font-size: 0;
@@ -397,14 +402,23 @@
 	&__items {
 		display: flex;
 		flex-direction: column;
+
+		@include small-to-medium-screen {
+			max-height: 45vh;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
 	}
 
 	&-item {
 		display: grid;
-		grid-template-columns: minmax(160px, 1fr) 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 		grid-auto-rows: 0;
 		grid-auto-columns: 0;
+		border-bottom: 1px solid #81d8d0;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 
 		&__image {
 			img {
