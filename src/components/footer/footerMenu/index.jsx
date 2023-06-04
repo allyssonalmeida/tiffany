@@ -3,7 +3,7 @@ import menuData from '../../../data/menu.json'
 
 const FooterMenu = () => {
   const { footer: menus } = menuData;
-  console.log(menus)
+  // console.log(menus)
   return (
     menus &&
     <div className={style['footer__menu-wrapper']}>

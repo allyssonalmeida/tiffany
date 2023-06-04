@@ -37,7 +37,6 @@ const Product = ({ product }) => {
 }
 export default Product
 
-
 Product.propTypes = {
   product: PropTypes.object.isRequired
 }

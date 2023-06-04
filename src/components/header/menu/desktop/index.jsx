@@ -1,17 +1,11 @@
 import Box from '../../../box'
 import style from '../../../../styles/Menu.module.scss'
 import menu from '../../../../data/menu.json'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const DesktopMenu = () => {
   const { header: headerMenu } = menu
   const [activeMenu, setActiveMenu] = useState('')
-
-  console.log("Header Menu: ", headerMenu)
-
-  useEffect(() => {
-    console.log(activeMenu)
-  }, [activeMenu])
 
   return (
     <div className={style.menu__desktop}>

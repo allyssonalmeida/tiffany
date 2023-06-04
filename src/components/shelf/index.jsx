@@ -33,7 +33,7 @@ const options = {
 const Shelf = () => {
   const { products } = items
 
-  console.log(products)
+  // console.log(products)
 
   return (
     <section className={style.shelf}>

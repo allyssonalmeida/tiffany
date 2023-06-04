@@ -10,24 +10,27 @@ export const CartProvider = ({ children }) => {
   const countItems = () => {
     const initialValue = 0
     const totalItems = cart?.products?.reduce((acc, currentValue) => (acc + currentValue.quantity), initialValue)
-    console.log('totalItems', totalItems)
+    // console.log('totalItems', totalItems)
     return totalItems
   }
 
   const calculateTotal = () => {
     const initialValue = 0
     const total = cart?.products?.reduce((acc, currentValue) => (acc + currentValue.price * currentValue.quantity), initialValue)
-    console.log('total', total)
+    // console.log('total', total)
     return total
   }
 
 
   const initiateCart = () => {
     const storedCart = window.localStorage.getItem('cart') ? JSON.parse(window.localStorage.getItem('cart')) : null
+    console.log('Stored Cart: ', storedCart);
 
     if (storedCart?.orderId) {
-      setCart(storedCart)
+      console.log('stored cart found', storedCart?.orderId)
+      setCart({ ...storedCart })
     } else {
+      console.log('creating a new cart')
       const newCart = {
         orderId: uuid.v4(),
         products: [],
@@ -68,12 +71,15 @@ export const CartProvider = ({ children }) => {
   }
 
   useEffect(() => {
+    console.log('initializing cart')
     initiateCart()
   }, [])
 
   useEffect(() => {
-    console.log("cart updated: ", cart)
-    window.localStorage.setItem('cart', JSON.stringify(cart))
+    if (cart.orderId) {
+      console.log("cart updated: ", cart)
+      window.localStorage.setItem('cart', JSON.stringify(cart))
+    }
   }, [cart])
 
   return (

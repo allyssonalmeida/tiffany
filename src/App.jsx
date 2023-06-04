@@ -16,8 +16,8 @@ const App = () => {
     banners, categories, landmark, stories, fullbanners
   } = content
 
-  console.log("banners: ", banners)
-  console.log("categories: ", categories)
+  // console.log("banners: ", banners)
+  // console.log("categories: ", categories)
 
   return (
     <CartProvider>

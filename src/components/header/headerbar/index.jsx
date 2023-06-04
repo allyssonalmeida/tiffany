@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 import style from "../../../styles/Header.module.scss";
@@ -6,17 +6,13 @@ import Tiffany from "../../../assets/images/tiffco-logo-2.svg";
 import Account from "../account";
 import Wishlist from "../wishlist";
 import Minicart from "../minicart";
+import { PropTypes } from "prop-types";
 
-const HeaderBar = () => {
-  const { countItems, cart } = useContext(CartContext)
+const HeaderBar = ({ setMobileMenu }) => {
+  const { countItems } = useContext(CartContext)
   const [activeMenu, setActiveMenu] = useState('')
 
   const totalItems = countItems()
-
-  useEffect(() => {
-    console.log("cart", cart)
-  }, [cart])
-
 
   return (
     <div className={style.headerBar}>
@@ -25,6 +21,7 @@ const HeaderBar = () => {
           href="#"
           title="Mobile menu"
           className={`${style.headerBar__menu}`}
+          onClick={() => { setMobileMenu(true) }}
         >
           Open Menu
         </button>
@@ -40,7 +37,7 @@ const HeaderBar = () => {
           title="Store Locations"
           className={`${style.headerBar__item}  ${style["headerBar__item--location"]}`}
         >
-          Store Locations
+          Store Locator
         </a>
         <a
           href="#contact"
@@ -68,7 +65,7 @@ const HeaderBar = () => {
             onMouseEnter={() => { setActiveMenu('account') }}
             className={`${style.headerBar__item} ${style["headerBar__item--account"]}`}
           >
-            Account
+            My Account
           </a>
           <a
             href="#wishlist"
@@ -84,7 +81,7 @@ const HeaderBar = () => {
             onMouseEnter={() => { setActiveMenu('cart') }}
             className={`${style.headerBar__item} ${style["headerBar__item--shoppingbag"]}`}
           >
-            Your Shopping Bag <span className={style.bag__count}>{totalItems}</span>
+            Your Shopping Bag <span className={style.bag__count}>{totalItems > 0 && totalItems}</span>
           </a>
         </div>
         <div className={`${style.headerBar__dropdown} ${style['headerBar__dropdown--right']} ${activeMenu !== '' && style['headerBar__dropdown--active']}`}>
@@ -98,3 +95,7 @@ const HeaderBar = () => {
 };
 
 export default HeaderBar;
+
+HeaderBar.propTypes = {
+  setMobileMenu: PropTypes.func
+}
